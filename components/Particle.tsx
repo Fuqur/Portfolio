@@ -1,11 +1,11 @@
 "use client";
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import Particles from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim"
 
 const Particle = () => {
   const particlesInit = useCallback(async (engine: any) => {
-    await loadFull(engine);
+    await loadSlim(engine);
   }, []);
   const particlesLoaded = useCallback(async () => {}, []);
   return (
@@ -22,7 +22,7 @@ const Particle = () => {
               enable: true,
               mode: "repulse",
             },
-            resize: true,
+            resize: {},
           },
           modes: {
             repulse: {
