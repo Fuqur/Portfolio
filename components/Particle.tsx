@@ -1,4 +1,4 @@
-"useClient"
+"use client"
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
@@ -21,18 +21,10 @@ const Particle = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      background: {
-        color: {
-          value: "#0d47a1",
-        },
-      },
+      fullScreen:{enable:false},
       fpsLimit: 120,
       interactivity: {
         events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
           onHover: {
             enable: true,
             mode: "repulse",
@@ -40,40 +32,44 @@ const Particle = () => {
         },
         modes: {
           push: {
-            quantity: 4,
+            quantity: 40,
           },
           repulse: {
-            distance: 200,
+            distance: 100,
             duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#EE0F0F",
         },
         links: {
-          color: "#ffffff",
+          color: "#EE0F0F",
           distance: 150,
           enable: true,
           opacity: 0.5,
-          width: 1,
+          width: 2,
+        },
+        collisions:{
+          enable:true
         },
         move: {
-          direction: "none",
+          direction: "top-left",
           enable: true,
           outModes: {
-            default: "out",
+            default: "bounce",
           },
-          random: false,
-          speed: 6,
+          random: true,
+          speed: 1,
           straight: false,
         },
         number: {
           density: {
             enable: true,
+            area:800
           },
-          value: 80,
+          value: 250,
         },
         opacity: {
           value: 0.5,
@@ -93,6 +89,7 @@ const Particle = () => {
   if (init) {
     return (
       <Particles
+      className="h-screen"
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
