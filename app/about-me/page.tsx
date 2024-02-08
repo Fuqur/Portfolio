@@ -10,8 +10,10 @@ const page = () => {
           My Skills<span className="text-red-500">.</span>
         </h1>
         <p className="max-w-[350px] text-[16px] text-gray-200 md:text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          I am Frontend developer and I have knowledge in:
+           REACT,TS,JS,NODE.JS,
+           HTML,CSS,GIT,
+           GITHUB,NEXT.JS
         </p>
       </div>
       <div className="absolute -left-36 bottom-5 rotate-12 animate-pulse duration-75">
@@ -23,7 +25,7 @@ const page = () => {
           className="w-full h-full hidden md:block"
         />
       </div>
-      <ServiceSlider/>
+      <ServiceSlider />
     </div>
   );
 };

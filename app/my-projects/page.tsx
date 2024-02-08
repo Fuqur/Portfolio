@@ -9,8 +9,9 @@ const Page = () => {
           My Work<span className="text-red-500">.</span>
         </h1>
         <p className="max-w-[400px] text-[16px] text-gray-200 md:text-gray-400">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          I shocase this site to demonstrate my skills in NEXT.JS,REACT and TS,
+          but also by using links in my resume you can acsess my other projects
+           to get an idea of  what Im capable of.
         </p>
       </div>
       <ProjectSlider />

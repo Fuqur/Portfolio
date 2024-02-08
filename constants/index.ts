@@ -13,15 +13,18 @@ import {
 export const Socials = [
   {
     name: "Discord",
-    src: "/assets/discord.svg",
+    src: "/assets/vk.webp",
+    href:"https://vk.com/goslingbessmerten"
   },
   {
     name: "Facebook",
     src: "/assets/facebook.svg",
+    href:"https://www.facebook.com/ivan.darganov/",
   },
   {
     name: "Instagram",
     src: "/assets/instagram.svg",
+    href: "https://www.instagram.com/idargan_lev/"
   },
 ];
 
@@ -76,38 +79,38 @@ export const ProImages2 = [
 export const ServiceData = [
   {
     icon: RxReader,
-    title: "Seo",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: "/assets/space/SpaceCity7.jpeg",
+    title: "Portfolio",
+    content: "NEXT.JS,REACT,TS",
+    backgroundImage: "/assets/Por.jpg",
   },
   {
     icon: RxCrop,
-    title: "Development",
-    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-    backgroundImage: "/assets/space/SpaceCity9.jpeg",
+    title: "Carsite",
+    content: "JS,REACT.JS,REDUX",
+    backgroundImage: "/assets/Cars.jpg",
   },
   {
     icon: RxPencil2,
-    title: "Branding",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: "/assets/space/SpaceCity1.jpg",
+    title: "Social Network",
+    content: "REACT,TS,FIREBASE          ,MATIREAL.UI",
+    backgroundImage: "/assets/med.jpg",
   },
   {
     icon: RxDesktop,
-    title: "Design",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: "/assets/space/SpaceCity6.jpeg",
+    title: "Pre order",
+    content: "PostgreSQL, Express, React, NodeJS,TS",
+    backgroundImage: "/assets/GTA.jpg",
   },
   {
     icon: RxAccessibility,
-    title: "Management",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Soon",
+    content: "...",
     backgroundImage: "/assets/space/SpaceCity5.jpeg",
   },
   {
     icon: RxRocket,
-    title: "Production",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Soon",
+    content: "...",
     backgroundImage: "/assets/space/SpaceCity8.jpeg",
   },
 ];
